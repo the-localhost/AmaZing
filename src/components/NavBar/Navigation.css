@@ -102,3 +102,17 @@
     margin-top: 15px;
     font-weight: bold;
  }
+
+ .navbar__footer {
+    width: 100vw;
+    height: 30px;
+    background-color: #22303E;
+    color: white;
+    display: flex;
+ }
+
+ .navbar__footerText {
+    margin: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+ }

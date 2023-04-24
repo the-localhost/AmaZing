@@ -8,7 +8,8 @@ class NavBar extends Component {
     }
    
     render() { 
-        return ( 
+        return (
+            <div className="navbar">
             <div className="navbar__component">
                 <div className="navbar__logo"></div>
                 <div className="navbar__locator">
@@ -47,6 +48,20 @@ class NavBar extends Component {
                     <div className="navbar__cartText">Cart</div>
                 </div>
             </div>
+
+            <div className="navbar__footer">
+                <div className="navbar__footerText">Best Seller</div>
+                <div className="navbar__footerText">Mobile</div>
+                <div className="navbar__footerText">Amazon Pay</div>
+                <div className="navbar__footerText">Fashion</div>
+                <div className="navbar__footerText">Electronics</div>
+                <div className="navbar__footerText">Prime</div>
+                <div className="navbar__footerText">New Release</div>
+                <div className="navbar__footerText">Customer Service</div>
+                <div className="navbar__footerText">Computers</div>
+                <div className="navbar__footerText">Home & Kitchen</div>
+            </div>
+        </div> 
          );
     }
 }
