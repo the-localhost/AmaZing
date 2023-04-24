@@ -9,11 +9,11 @@ class NavBar extends Component {
    
     render() { 
         return ( 
-            <div class="navbar__component">
-                <div class="navbar__logo"></div>
-                <div class="navbar__locator">
-                    <div class="navbar__locatorImage"></div>
-                    <div class="navbar__location">Pune</div>
+            <div className="navbar__component">
+                <div className="navbar__logo"></div>
+                <div className="navbar__locator">
+                    <div className="navbar__locatorImage"></div>
+                    <div className="navbar__location">Pune</div>
                 </div>
             </div>
          );
