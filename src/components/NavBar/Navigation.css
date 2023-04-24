@@ -5,6 +5,10 @@
     display: flex;
 }
 
+.navbar__text {
+    color: white;
+}
+
 .navbar__logo{
     background: url('https://ik.imagekit.io/gaganEcomm/amazon-image/sprite_350x.png?updatedAt=1681641015130') no-repeat -9px -48px;
 	width: 100px;
@@ -18,9 +22,8 @@
 }
 
 .navbar__location {
-    color: white;
     font-weight: bold;
-    margin-left: 5px;
+    margin: 0px 5px;
 }
 
 .navbar__locatorImage {
@@ -31,6 +34,7 @@
 
 .navbar__search {
     display: flex;
+    margin-left: 50px;
 }
 
 .navbar__categories {
@@ -43,7 +47,7 @@
 }
 
 .navbar__searchBox {
-    width: 500px;
+    width: 640px;
     height: 40px;
     margin-top: 8px;
 }
@@ -61,4 +65,40 @@
 	width: 23px;
 	height: 23px;
     margin: 11px;
+ }
+
+ .navbar__signin {
+    width: 125px;
+    margin-top: 10px;
+    margin-left: 80px;
+ }
+
+ .navbar__orders {
+    width: 80px;
+    margin-top: 10px;
+    margin-left: 10px;
+ }
+
+ .navbar__cart {
+   display: flex;
+   margin-top: 10px;
+ }
+
+ .navbar__cartImage {
+    background: url('https://ik.imagekit.io/gaganEcomm/amazon-image/sprite_350x.png?updatedAt=1681641015130') no-repeat -9px -339px;
+	width: 40px;
+	height: 28px;
+ }
+
+ .navbar__cartItem {
+    position: relative;
+    left: -23px;
+    top: -3px;
+    font-weight: bold;
+    color: #F08805;
+ }
+
+ .navbar__cartText {
+    margin-top: 15px;
+    font-weight: bold;
  }

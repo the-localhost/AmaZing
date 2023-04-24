@@ -13,7 +13,7 @@ class NavBar extends Component {
                 <div className="navbar__logo"></div>
                 <div className="navbar__locator">
                     <div className="navbar__locatorImage"></div>
-                    <div className="navbar__location">Pune</div>
+                    <div className="navbar__location navbar__text">Pune</div>
                 </div>
                 <div className="navbar__search">
                     <div>
@@ -32,6 +32,19 @@ class NavBar extends Component {
                     <div className="navbar__searchIconBox">
                         <div className="navbar__searchIcon"></div>
                     </div>
+                </div>
+                <div className="navbar__signin navbar__text">
+                    <div style={{ fontSize: "14px"}}>Hello, Sign In</div>
+                    <div style={{ fontWeight: "bold"}}>Account & Lists</div>
+                </div>
+                <div className="navbar__orders navbar__text">
+                    <div style={{ fontSize: "14px"}}>Returns</div>
+                    <div style={{ fontWeight: "bold"}}>& Orders</div>
+                </div>
+                <div className="navbar__cart navbar__text">
+                    <div className="navbar__cartImage"></div>
+                    <div className="navbar__cartItem">0</div>
+                    <div className="navbar__cartText">Cart</div>
                 </div>
             </div>
          );
