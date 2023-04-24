@@ -20,7 +20,9 @@ class NavBar extends Component {
                     <div>
                         <input type="text" className="navbar__searchBox"></input>
                     </div>
-                    <div></div>
+                    <div className="navbar__searchIconBox">
+                        <div className="navbar__searchIcon"></div>
+                    </div>
                 </div>
             </div>
          );

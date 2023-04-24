@@ -38,3 +38,18 @@
     height: 40px;
     margin-top: 8px;
 }
+
+.navbar__searchIconBox {
+    background: #FEBE68;
+    height: 45px;
+    width: 45px;
+    margin-top: 8px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.navbar__searchIcon {
+    background: url('https://ik.imagekit.io/gaganEcomm/amazon-image/sprite_350x.png?updatedAt=1681641015130') no-repeat -9px -289px;
+	width: 23px;
+	height: 23px;
+    margin: 11px;
+ }
