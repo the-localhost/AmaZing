@@ -11,6 +11,10 @@ class NavBar extends Component {
         return ( 
             <div class="navbar__component">
                 <div class="navbar__logo"></div>
+                <div class="navbar__locator">
+                    <div class="navbar__locatorImage"></div>
+                    <div class="navbar__location">Pune</div>
+                </div>
             </div>
          );
     }

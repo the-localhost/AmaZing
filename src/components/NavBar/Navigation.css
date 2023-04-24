@@ -11,3 +11,20 @@
 	height: 32px;
     margin: 18px;
 }
+
+.navbar__locator {
+    display: flex;
+    margin: 20px 0px;
+}
+
+.navbar__location {
+    color: white;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.navbar__locatorImage {
+    background: url('https://ik.imagekit.io/gaganEcomm/amazon-image/sprite_350x.png?updatedAt=1681641015130') no-repeat -70px -305px;
+	width: 19px;
+	height: 22px;
+}
