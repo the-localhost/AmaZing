@@ -9,9 +9,9 @@ function LeftPanel() {
             Brand
         </div>
         <div className="leftSide__brandNames">
-            {brands.map((brand) => (
-                <label className="brandName">
-                    <input type="checkbox" value={brand} /> {brand}
+            {brands.map((brand, index) => (
+                <label key={index} className="brandName">
+                    <input key={index} type="checkbox" value={brand} /> {brand}
                 </label>)
                 )}
             {/* <label className="brandName">
