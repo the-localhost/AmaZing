@@ -19,8 +19,11 @@ function Product({prod}) {
             <Rating name="read-only" style={{ fontSize: "16px", lineHeight: "20px"}} value={4} readOnly />
             {prod.rating}
         </div>
-        <div className="product__price">
-            {prod.price}
+        <div class="product__price">
+            <span style={{ lineHeight: "24px" }}>
+                <span style={{ fontSize: "13px", verticalAlign: "top" }}>{'\u20B9'}</span>
+                <span>{prod.price}</span>
+            </span>
         </div>
     </div>
   )
