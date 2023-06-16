@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import AdvertisementFour from '../AdvertisementFour/AdvertisementFour';
-import AdvertisementOne from '../AdvertisementOne/AdvertisementOne';
+import AdvertisementFour from './AdvertisementFour/AdvertisementFour';
+import AdvertisementOne from './AdvertisementOne/AdvertisementOne';
 import './MainPage.css'
 
 class MainPage extends Component {
