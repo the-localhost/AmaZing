@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import "./Navigation.css"
+import { Link } from "react-router-dom"
 
 class NavBar extends Component {
     constructor(props) {
@@ -51,7 +52,9 @@ class NavBar extends Component {
 
             <div className="navbar__footer">
                 <div className="navbar__footerText">Best Seller</div>
-                <div className="navbar__footerText">Mobile</div>
+                <Link to="/display" style={{color:"white", textDecoration:"none"}}>
+                    <div className="navbar__footerText">Mobile</div>
+                </Link>
                 <div className="navbar__footerText">Amazon Pay</div>
                 <div className="navbar__footerText">Fashion</div>
                 <div className="navbar__footerText">Electronics</div>
