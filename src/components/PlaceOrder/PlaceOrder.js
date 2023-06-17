@@ -22,7 +22,7 @@ function PlaceOrder() {
                 delivery: "Wednesday, Aug 18",
                 price: "50,999",
                 status: "In stock",
-                soldby: "Darshita Electronics",
+                soldby: "Appario Retail",
                 image:
                     "https://ik.imagekit.io/gaganEcomm/amazon-image/mobiles/71w3oJ7aWyL._AC_UL640_FMwebp_QL65_.webp?updatedAt=1681641021702",
                 about: [
@@ -105,7 +105,7 @@ function PlaceOrder() {
                 delivery: "Wednesday, Aug 18",
                 price: "76,543",
                 status: "In stock",
-                soldby: "Darshita Electronics",
+                soldby: "Appario Retail",
                 image:
                     "https://ik.imagekit.io/gaganEcomm/amazon-image/mobiles/71ZOtNdaZCL._AC_UL640_FMwebp_QL65_.webp?updatedAt=1681641021282",
                 about: [
@@ -170,7 +170,7 @@ function PlaceOrder() {
                         <div className="textgap">FREE Delivery: <strong>Wednesday, Aug 18</strong></div>
                         <div className="textgap">EMI starts at {'\u20B9'}2,401. No Cost EMI available.</div>
                         <div style={{ color: "#007600", fontSize: "20px"}} className="textgap">In Stock</div>
-                        <div className="textgap">Sold by <strong>Appario Retail</strong> and Fulfilled by Amazon.</div>
+                        <div className="textgap">Sold by <strong>{productDetails.soldby}</strong> and Fulfilled by Amazon.</div>
                     </div>
                     <div>
                         <br />
