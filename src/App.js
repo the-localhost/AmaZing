@@ -12,7 +12,7 @@ function App() {
       <NavBar />
       <Routes>
           <Route path="/display" element={<DisplayContent/>} />
-          <Route path="/order" element={<PlaceOrder />} />
+          <Route path="/order/:id" element={<PlaceOrder />} />
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/" element={<MainPage />} />
       </Routes>
