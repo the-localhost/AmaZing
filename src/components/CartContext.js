@@ -13,6 +13,10 @@ export default class CartContextProvider extends Component {
                 itemsList.push(product)
 
                 this.setState({items: itemsList, size: itemsList.length})
+                this.state.saveToLocalCache()
+            },
+            saveToLocalCache: () => {
+                localStorage.setItem('myCart', JSON.stringify(this.state.items))
             }
         }
     }
