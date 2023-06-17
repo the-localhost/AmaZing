@@ -1,12 +1,18 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect, useContext} from 'react'
 import './PlaceOrder.css'
 import { Grid, Rating, Paper } from '@mui/material'
 import { Link, useParams } from "react-router-dom"
+import {CartContext} from '../CartContext'
 
 function PlaceOrder() {
+    const {items, size, increment} = useContext(CartContext)
     const [productDetails, setProductDetails] = useState([]);
 
     let {id} = useParams();
+
+    const addToCart = () => {
+        increment(productDetails)
+    }
 
     useEffect(() => {
         // api call
@@ -208,10 +214,10 @@ function PlaceOrder() {
                                 <label><input type="checkbox" ></input>Apple 20W USB Power Adapter</label>
                             </div>
                         <div > 
+                            <button className="placeOrder__button addToCart" onClick={addToCart}>Add to cart</button>
                             <Link to="/checkout">
-                                <button className="placeOrder__button addToCart">Add to cart</button>
+                                <button className="placeOrder__button buyNow">Buy Now</button>
                             </Link>
-                            <button className="placeOrder__button buyNow">Buy Now</button>
                         </div>
                     </div>
                 </Paper> 
