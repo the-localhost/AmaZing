@@ -23,7 +23,7 @@ function RightPanel() {
   return (
     <div className="rightSide__main">
         { listOfProducts.map((product, index) => (
-            <Link to={`/order/`+product.id} >
+            <Link key={index} to={`/order/`+product.id} >
                 <Product key={index} prod={product}/>
             </Link>
         ))}
