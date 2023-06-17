@@ -12,17 +12,136 @@ function PlaceOrder() {
         // api call
 
         let list = [
-            {id:288343456439, name: "iPhone11", rating: 4, ratingCount: 35000, price: 50999, image:"https://ik.imagekit.io/gaganEcomm/amazon-image/mobiles/71w3oJ7aWyL._AC_UL640_FMwebp_QL65_.webp?updatedAt=1681641021702"},
-            {id:234883456439, name: "iPhone12", rating: 5, ratingCount: 45000, price: 40999, image:"https://ik.imagekit.io/gaganEcomm/amazon-image/mobiles/71i2XhHU3pL._AC_UL640_FMwebp_QL65_.webp?updatedAt=1681641021264"},
-            {id:234348856439, name: "iPhone13", rating: 3.5, ratingCount: 55000, price: 30999, image:"https://ik.imagekit.io/gaganEcomm/amazon-image/mobiles/71ZOtNdaZCL._AC_UL640_FMwebp_QL65_.webp?updatedAt=1681641021282"},
-            {id:234345677439, name: "iPhone14", rating: 4.5, ratingCount: 65000, price: 20999, image:"https://ik.imagekit.io/gaganEcomm/amazon-image/mobiles/51PuFBgBK4L._AC_UL640_FMwebp_QL65___1_.webp?updatedAt=1681641021616"},
-            {id:234345643669, name: "iPhone15", rating: 4.5, ratingCount: 55000, price: 30999, image:"https://ik.imagekit.io/gaganEcomm/amazon-image/mobiles/71ZOtNdaZCL._AC_UL640_FMwebp_QL65_.webp?updatedAt=1681641021282"},
-            {id:234345643955, name: "iPhone16", rating: 4.5, ratingCount: 65000, price: 20999, image:"https://ik.imagekit.io/gaganEcomm/amazon-image/mobiles/51PuFBgBK4L._AC_UL640_FMwebp_QL65___1_.webp?updatedAt=1681641021616"},
+            {
+                id: 288343456439,
+                name: "New Apple iPhone 10",
+                rating: 4,
+                ratingCount: "34,565",
+                review: "1000",
+                emi: "2401",
+                delivery: "Wednesday, Aug 18",
+                price: "50,999",
+                status: "In stock",
+                soldby: "Darshita Electronics",
+                image:
+                    "https://ik.imagekit.io/gaganEcomm/amazon-image/mobiles/71w3oJ7aWyL._AC_UL640_FMwebp_QL65_.webp?updatedAt=1681641021702",
+                about: [
+                    "6.1-inch (15.5 cm diagonal) Liquid Retina HD LCD display",
+                    "Water and dust resistant (2 meters for up to 30 minutes, IP68)",
+                    "Dual-camera system with 12MP Ultra Wide and Wide cameras; Night mode, Portrait mode, and 4K video up to 60fps",
+                    "Face ID for secure authentication",
+                ],
+            },
+            {
+                id: 234883456439,
+                name: "New Apple iPhone 11",
+                rating: 4,
+                ratingCount: "34,565",
+                review: "1000",
+                emi: "2401",
+                delivery: "Wednesday, Aug 18",
+                price: "40,999",
+                status: "In stock",
+                soldby: "Darshita Electronics",
+                image:
+                    "https://ik.imagekit.io/gaganEcomm/amazon-image/mobiles/71i2XhHU3pL._AC_UL640_FMwebp_QL65_.webp?updatedAt=1681641021264",
+                about: [
+                    "Desription for iphone 11 -bla bla",
+                    "6.1-inch (15.5 cm diagonal) Liquid Retina HD LCD display",
+                    "Water and dust resistant (2 meters for up to 30 minutes, IP68)",
+                    "Dual-camera system with 12MP Ultra Wide and Wide cameras; Night mode, Portrait mode, and 4K video up to 60fps",
+                    "Face ID for secure authentication",
+                ],
+            },
+            {
+                id: 234348856439,
+                name: "iPhone12",
+                rating: 4,
+                ratingCount: "34,565",
+                review: "1000",
+                emi: "2401",
+                delivery: "Wednesday, Aug 18",
+                price: "76,543",
+                status: "In stock",
+                soldby: "Darshita Electronics",
+                image:
+                    "https://ik.imagekit.io/gaganEcomm/amazon-image/mobiles/71ZOtNdaZCL._AC_UL640_FMwebp_QL65_.webp?updatedAt=1681641021282",
+                about: [
+                    "Desription for iphone 12 pro pmax -bla bla",
+                    "6.1-inch (15.5 cm diagonal) Liquid Retina HD LCD display",
+                    "Water and dust resistant (2 meters for up to 30 minutes, IP68)",
+                    "Dual-camera system with 12MP Ultra Wide and Wide cameras; Night mode, Portrait mode, and 4K video up to 60fps",
+                    "Face ID for secure authentication",
+                ],
+            },
+            {
+                id: 234345677439,
+                name: "iPhone13",
+                rating: 4,
+                ratingCount: "6,37,357",
+                review: "1000",
+                emi: "2401",
+                delivery: "Wednesday, Aug 18",
+                price: "50,999",
+                status: "In stock",
+                soldby: "Darshita Electronics",
+                image:
+                    "https://ik.imagekit.io/gaganEcomm/amazon-image/mobiles/51PuFBgBK4L._AC_UL640_FMwebp_QL65___1_.webp?updatedAt=1681641021616",
+                about: [
+                    "Desription for iphone 13 -bla mini bla",
+                    "6.1-inch (15.5 cm diagonal) Liquid Retina HD LCD display",
+                    "Water and dust resistant (2 meters for up to 30 minutes, IP68)",
+                    "Dual-camera system with 12MP Ultra Wide and Wide cameras; Night mode, Portrait mode, and 4K video up to 60fps",
+                    "Face ID for secure authentication",
+                ],
+            },
+            {
+                id: 234345643669,
+                name: "iPhone14",
+                rating: 4,
+                ratingCount: "34,565",
+                review: "1000",
+                emi: "2401",
+                delivery: "Wednesday, Aug 18",
+                price: "76,543",
+                status: "In stock",
+                soldby: "Darshita Electronics",
+                image:
+                    "https://ik.imagekit.io/gaganEcomm/amazon-image/mobiles/71ZOtNdaZCL._AC_UL640_FMwebp_QL65_.webp?updatedAt=1681641021282",
+                about: [
+                    "Desription for iphone 12 -bla bla",
+                    "6.1-inch (15.5 cm diagonal) Liquid Retina HD LCD display",
+                    "Water and dust resistant (2 meters for up to 30 minutes, IP68)",
+                    "Dual-camera system with 12MP Ultra Wide and Wide cameras; Night mode, Portrait mode, and 4K video up to 60fps",
+                    "Face ID for secure authentication",
+                ],
+            },
+            {
+                id: 234345643955,
+                name: "iPhone15",
+                rating: 4,
+                ratingCount: "34,565",
+                review: "1000",
+                emi: "2401",
+                delivery: "Wednesday, Aug 18",
+                price: "97,357",
+                status: "In stock",
+                soldby: "Darshita Electronics",
+                image:
+                    "https://ik.imagekit.io/gaganEcomm/amazon-image/mobiles/51PuFBgBK4L._AC_UL640_FMwebp_QL65___1_.webp?updatedAt=1681641021616",
+                about: [
+                    "Desription for iphone 13 -bla bla",
+                    "6.1-inch (15.5 cm diagonal) Liquid Retina HD LCD display",
+                    "Water and dust resistant (2 meters for up to 30 minutes, IP68)",
+                    "Dual-camera system with 12MP Ultra Wide and Wide cameras; Night mode, Portrait mode, and 4K video up to 60fps",
+                    "Face ID for secure authentication",
+                ],
+            },
         ]
 
-        let filteredProducts = list.filter((product) => product.id==id)
+        let filteredProducts = list.filter((product) => product.id===parseInt(id))
         setProductDetails(filteredProducts[0]);
-    }, [id])
+    }, [])
 
   return (
     <div>
@@ -39,7 +158,9 @@ function PlaceOrder() {
                         {productDetails.name}
                     </div>
                     <div>
-                        <Rating name="read-only" style={{ fontSize: "20px"}} value={productDetails.rating} readOnly />
+                        {/* Throwing error and displaying 0 stars in the rating????
+                        <Rating name="read-only" style={{ fontSize: "20px"}} value={productDetails.rating} readOnly/> */}
+                        <Rating name="read-only" style={{ fontSize: "20px"}} value={4} readOnly/>
                         {productDetails.ratingCount} ratings |
                         1000+ answered questions
                     </div>
@@ -56,6 +177,14 @@ function PlaceOrder() {
                         <div style={{fontSize:"24px" }} className="textgap">About this item</div>
                         <div>
                             <ul>
+                                {   
+                                    productDetails.about!==undefined ?
+                                    productDetails.about.map ( (item, index) =>(
+                                        <li key={index}>{item}</li>
+                                    )) : <span></span>
+                                }
+                                </ul>
+                            {/* <ul>
                                 <li>6.1-inch (15.5 cm diagonal) Liquid Retina HD LCD display</li>
                                 <li>Water and dust resistant (2 meters for up to 30 minutes, IP68)</li>
                                 <li>Dual-camera system with 12MP Ultra Wide and Wide cameras; Night mode, Portrait mode, and 4K video up to 60fps</li>
@@ -63,7 +192,7 @@ function PlaceOrder() {
                                 <li>Face ID for secure authentication</li>
                                 <li>A13 Bionic chip with third-generation Neural Engine</li>
                                 <li>Fast-charge capable</li>
-                            </ul>
+                            </ul> */}
                         </div>
                     </div>
                 </div>
