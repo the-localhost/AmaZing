@@ -5,9 +5,14 @@ export const CartContext = createContext()
 export default class CartContextProvider extends Component {
     constructor(props) {
         super(props)
+
+        let existingCart = localStorage.getItem('myCart')
+        existingCart = (existingCart) ? JSON.parse(existingCart) : []
+        let existingCartSize = existingCart.length
+
         this.state = {
-            items: [],
-            size: 0,
+            items: existingCart,
+            size: existingCartSize,
             increment: (product) => {
                 let itemsList = this.state.items
                 itemsList.push(product)
