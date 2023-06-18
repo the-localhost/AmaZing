@@ -1,0 +1,7 @@
+.rightSide__main {
+    height: 100%;
+    /* width: 78vw; */
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
