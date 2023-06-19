@@ -11,7 +11,7 @@ public class UserMetaData {
 	private long id;
 
 	private String name;
-	private String UniqueId;
+	private String uniqueId;
 	private String email;
 
 	public UserMetaData() {
@@ -23,7 +23,7 @@ public class UserMetaData {
 		super();
 		this.id = id;
 		this.name = name;
-		UniqueId = uniqueId;
+		this.uniqueId = uniqueId;
 		this.email = email;
 	}
 
@@ -44,11 +44,11 @@ public class UserMetaData {
 	}
 
 	public String getUniqueId() {
-		return UniqueId;
+		return uniqueId;
 	}
 
 	public void setUniqueId(String uniqueId) {
-		UniqueId = uniqueId;
+		this.uniqueId = uniqueId;
 	}
 
 	public String getEmail() {
