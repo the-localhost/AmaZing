@@ -5,7 +5,7 @@ import { Link, useParams } from "react-router-dom"
 import {CartContext} from '../CartContext'
 
 function PlaceOrder() {
-    const {items, size, increment} = useContext(CartContext)
+    const {increment} = useContext(CartContext)
     const [productDetails, setProductDetails] = useState([]);
 
     let {id} = useParams();
@@ -147,7 +147,7 @@ function PlaceOrder() {
 
         let filteredProducts = list.filter((product) => product.id===parseInt(id))
         setProductDetails(filteredProducts[0]);
-    }, [])
+    }, [id])
 
   return (
     <div>
