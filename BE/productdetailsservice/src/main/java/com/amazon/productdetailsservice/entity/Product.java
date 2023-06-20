@@ -4,9 +4,11 @@ import java.math.BigInteger;
 import java.util.UUID;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import jakarta.persistence.GeneratedValue;
 
+@Document
 public class Product {
 
 	@Id
