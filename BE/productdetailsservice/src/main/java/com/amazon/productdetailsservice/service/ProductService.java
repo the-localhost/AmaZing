@@ -16,6 +16,7 @@ public class ProductService {
 	ProductRepository productRepository;
 	
 	public Product saveProduct(Product product) {
+		product.setProductId(UUID.randomUUID());
 		Product savedProduct = productRepository.save(product);
 		return savedProduct;
 	}
