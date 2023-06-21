@@ -1,6 +1,5 @@
-package com.amazon.productdetailsservicecontroller;
+package com.amazon.productdetailsservice.controller;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
@@ -17,25 +16,25 @@ import com.amazon.productdetailsservice.entity.Product;
 import com.amazon.productdetailsservice.service.ProductService;
 
 @RestController
-@RequestMapping ("/amazon/products")
+@RequestMapping("/amazon/products")
 public class ProductController {
 	
 	@Autowired
 	ProductService productService;
 	
-	@PostMapping("/save")
+	@PostMapping("save")
 	public Product saveProduct(@RequestBody Product product) {
 		Product savedProduct = productService.saveProduct(product);
 		return savedProduct;
 	}
 	
-	@GetMapping("/get-all-products")
+	@GetMapping("get-all-products")
 	public List<Product> getAllProducts(){
 		List<Product> allProducts = productService.getAllProducts();
 		return allProducts;
 	}
 	
-	@GetMapping("/search/ {id}")
+	@GetMapping("/search/{productId}")
 	public Product getProductById(@PathVariable UUID productId) {
 		Optional<Product> optionalProduct = productService.getByProductId(productId);
 		if(optionalProduct.isEmpty()) {
