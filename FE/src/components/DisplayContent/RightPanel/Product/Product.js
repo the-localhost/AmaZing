@@ -7,7 +7,7 @@ function Product({prod}) {
     <div className="product__main">
         <div className="product__image">
             <img 
-                src={prod.image}
+                src={prod.imageURL}
                 alt="product"
                 height="300px" 
             />
