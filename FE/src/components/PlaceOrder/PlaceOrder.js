@@ -12,6 +12,16 @@ function PlaceOrder() {
 
     const addToCart = () => {
         increment(productDetails)
+        fetch("http://localhost:8081/amazon/add-to-cart/add", {
+            method: "POST",
+            body: JSON.stringify({
+                "userId": "962f9a88-426c-4c33-b50c-486dd4b8d6fe",
+                "productId": productDetails.productId
+            }),
+            headers: {
+                "Content-type": "application/json; charset=UTF-8"
+            }
+        });
     }
 
     useEffect(() => {
