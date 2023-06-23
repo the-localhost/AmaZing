@@ -3,6 +3,7 @@ package com.amazon.addtocart.controller;
 import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -17,6 +18,7 @@ import com.amazon.addtocart.service.AddToCartService;
 
 @RestController
 @RequestMapping("/amazon/add-to-cart")
+@CrossOrigin(origins="http://localhost:3000/")
 public class AddToCartController {
 	
 	@Autowired
