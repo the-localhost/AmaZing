@@ -16,7 +16,9 @@ class NavBar extends Component {
         return (
             <div className="navbar">
             <div className="navbar__component">
-                <div className="navbar__logo"></div>
+                <Link to="/">
+                    <div className="navbar__logo"></div>
+                </Link>
                 <div className="navbar__locator">
                     <div className="navbar__locatorImage"></div>
                     <div className="navbar__location navbar__text">Pune</div>
