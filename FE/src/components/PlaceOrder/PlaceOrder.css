@@ -31,13 +31,22 @@
     margin: 5px;
     border: 0px;
     color: black;
-}
-
-.buyNow {
-    background-color: #FFD712;
+    cursor: pointer;
 }
 
 .addToCart {
     margin-top: 30px !important;
+    background-color: #FFD712;
+}
+
+.addToCart:hover {
+    background-color: #ecc60c;
+}
+
+.buyNow {
     background-color: #FFA41B;
+}
+
+.buyNow:hover {
+    background-color: #eb9617;
 }
