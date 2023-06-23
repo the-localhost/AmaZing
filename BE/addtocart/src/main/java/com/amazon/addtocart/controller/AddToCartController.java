@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.amazon.addtocart.entity.Cart;
+import com.amazon.addtocart.entity.CartDetails;
 import com.amazon.addtocart.service.AddToCartService;
 
 @RestController
@@ -32,7 +33,8 @@ public class AddToCartController {
 	}
 	
 	@GetMapping("/show/{userId}")
-	public void showItems(@PathVariable UUID userId) {
-		addToCartService.displayAllCartItemsForUser(userId);
+	public CartDetails showItems(@PathVariable UUID userId) {
+		CartDetails cart = addToCartService.displayAllCartItemsForUser(userId);
+		return cart;
 	}
 }
