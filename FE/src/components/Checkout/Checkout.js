@@ -6,8 +6,7 @@ import { CartContext } from '../CartContext'
 
 function Checkout() {
     const {items} = useContext(CartContext)
-    let totalCartPrice = items.reduce((total, item) => 
-        total + parseInt(item.price.replaceAll(',','')), 0)
+    let totalCartPrice = items.reduce((total, item) => total + item.price, 0)
 
   return (
     <div className="checkout__main">
