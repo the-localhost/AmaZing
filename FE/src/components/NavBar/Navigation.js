@@ -47,11 +47,13 @@ class NavBar extends Component {
                     <div style={{ fontSize: "14px"}}>Returns</div>
                     <div style={{ fontWeight: "bold"}}>& Orders</div>
                 </div>
-                <div className="navbar__cart navbar__text">
-                    <div className="navbar__cartImage"></div>
-                    <div className="navbar__cartItem">{size}</div>
-                    <div className="navbar__cartText">Cart</div>
-                </div>
+                <Link to="/checkout">
+                    <div className="navbar__cart navbar__text">
+                        <div className="navbar__cartImage"></div>
+                        <div className="navbar__cartItem">{size}</div>
+                        <div className="navbar__cartText">Cart</div>
+                    </div>
+                </Link>
             </div>
 
             <div className="navbar__footer">
