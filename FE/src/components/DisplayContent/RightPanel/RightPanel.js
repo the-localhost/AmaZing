@@ -22,7 +22,6 @@ function RightPanel() {
             try{
                 const response = await fetch("http://localhost:8083/amazon/products/get-all-products")
                 const products = await response.json()
-                console.log("Products::: ", products)
                 setListOfProducts(products);
             } catch (error) {
                 console.log("ERROR: ", error)
