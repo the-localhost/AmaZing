@@ -25,17 +25,17 @@ class NavBar extends Component {
                 </div>
                 <div className="navbar__search">
                     <div>
-                        <select className="navbar__categories">
-                            <option value="all" className="value">All</option>
-                            <option value="alexa" className="value">Alexa</option>
-                            <option value="baby" className="value">Baby</option>
-                            <option value="beauty" className="value">Beauty</option>
-                            <option value="books" className="value">Books</option>
-                            <option value="electronics" className="value">Electronics</option>
+                        <select name="category" className="navbar__categories">
+                            <option name="all" value="all" className="value">All</option>
+                            <option name="alexa" value="alexa" className="value">Alexa</option>
+                            <option name="baby" value="baby" className="value">Baby</option>
+                            <option name="beauty" value="beauty" className="value">Beauty</option>
+                            <option name="books" value="books" className="value">Books</option>
+                            <option name="electronics" value="electronics" className="value">Electronics</option>
                         </select>
                     </div>
                     <div>
-                        <input type="text" className="navbar__searchBox"></input>
+                        <input name="query" type="text" className="navbar__searchBox"></input>
                     </div>
                     <div className="navbar__searchIconBox">
                         <div className="navbar__searchIcon"></div>
