@@ -11,7 +11,10 @@ import com.amazon.addtocart.entity.CartDetails;
 import com.amazon.addtocart.entity.Product;
 import com.amazon.addtocart.repository.AddToCartRepository;
 
+import jakarta.transaction.Transactional;
+
 @Service
+@Transactional
 public class AddToCartService {
 	@Autowired
 	public AddToCartRepository addToCartRepository;
@@ -24,7 +27,7 @@ public class AddToCartService {
 	}
 
 	public void deleteFromCart(Cart cart) {
-		addToCartRepository.delete(cart);
+		addToCartRepository.deleteByProductId(cart.productId);
 	}
 
 	public CartDetails displayAllCartItemsForUser(UUID userId) {
@@ -35,6 +38,7 @@ public class AddToCartService {
 		ArrayList<Cart> cartItems = addToCartRepository.findByUserId(userId);
 		ArrayList<Product> products = new ArrayList<>();
 		for(Cart cartItem: cartItems) {
+			System.out.println("Cart Item: " + cartItem.getProductId());
 			Product product = productDetailsProxy.getProductById(cartItem.getProductId());
 			products.add(product);
 		}
