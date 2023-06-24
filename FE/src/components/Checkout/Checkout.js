@@ -20,7 +20,10 @@ function Checkout() {
             <Grid item xs={9}>
                 <div className="checkout__container">
                     <div style={{ fontSize:"30px", fontWeight:"500", padding:"20px 0 0 20px"}}>Shopping Cart</div>
-                    <div>
+                    <div className="checkout__cartItems">
+                        {items.length==0 && 
+                            <div className="emptyCart">Your Amazon Cart is empty</div>
+                        }
                         {
                             items.map((item, index) => 
                                 <CheckoutItem key={index} product={item} deleteMethod={deleteItem}/>
