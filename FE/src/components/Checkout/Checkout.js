@@ -1,12 +1,18 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import './Checkout.css'
 import { Grid } from '@mui/material'
-import CheckoutItems from './CheckoutItems/CheckoutItems'
+import CheckoutItem from './CheckoutItem/CheckoutItem'
 import { CartContext } from '../CartContext'
 
 function Checkout() {
-    const {items} = useContext(CartContext)
+    let {items, deleteItemFromCart} = useContext(CartContext)
     let totalCartPrice = items.reduce((total, item) => total + item.price, 0)
+
+    useEffect(() => {}, [items])
+
+    const deleteItem = (product) => {
+        deleteItemFromCart(product)
+    }
 
   return (
     <div className="checkout__main">
@@ -17,7 +23,7 @@ function Checkout() {
                     <div>
                         {
                             items.map((item, index) => 
-                                <CheckoutItems key={index} product={item} />
+                                <CheckoutItem key={index} product={item} deleteMethod={deleteItem}/>
                             )
                         }
                     </div>
