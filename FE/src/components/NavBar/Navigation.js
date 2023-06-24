@@ -59,9 +59,9 @@ class NavBar extends Component {
             </div>
 
             <div className="navbar__footer">
-                <div className="navbar__footerText">Best Seller</div>
+                <div className="navbar__footerText">BestSellers</div>
                 <Link to="/display" style={{color:"white", textDecoration:"none"}}>
-                    <div className="navbar__footerText">Mobile</div>
+                    <div className="navbar__footerText">Mobiles</div>
                 </Link>
                 <div className="navbar__footerText">Amazon Pay</div>
                 <div className="navbar__footerText">Fashion</div>
