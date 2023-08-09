@@ -10,18 +10,18 @@ import lombok.Setter;
 @Getter @Setter
 public class CartDetails {
 	public UUID userId;
-	public ArrayList<Product> list;
+	public ArrayList<CartProduct> list;
 	
 	// WHY IS LOMBOK NOT WORKING HERE???
 	public void setUserId(UUID userId) {
 		this.userId = userId;
 	}
 
-	public void setList(ArrayList<Product> products) {
+	public void setList(ArrayList<CartProduct> products) {
 		this.list = products;
 	}
 	
-	public List<Product> getList(){
+	public List<CartProduct> getList(){
 		return this.list;
 	}
 }

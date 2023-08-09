@@ -5,18 +5,29 @@ import { Link, useParams } from "react-router-dom"
 import {CartContext} from '../CartContext'
 
 function PlaceOrder() {
-    const {increment} = useContext(CartContext)
+    const {increment, items} = useContext(CartContext)
     const [productDetails, setProductDetails] = useState([]);
 
     let {id} = useParams();
 
     const addToCart = () => {
         increment(productDetails)
+
+        const productId = productDetails.productId
+
+        const productItem = items.filter((item) => (item.product.productId == productId))
+        // console.log("prodItem: ", productItem)
+        let size = productItem[0].productCount
+        // console.log("size: ", size)
+
+
+        // console.log("PD: ", productDetails)
         fetch("http://localhost:8081/amazon/add-to-cart/add", {
             method: "POST",
             body: JSON.stringify({
                 "userId": "962f9a88-426c-4c33-b50c-486dd4b8d6fe",
-                "productId": productDetails.productId
+                "productId": productId,
+                "productCount": size
             }),
             headers: {
                 "Content-type": "application/json; charset=UTF-8"

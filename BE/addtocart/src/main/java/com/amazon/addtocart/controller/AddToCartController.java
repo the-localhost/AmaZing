@@ -26,6 +26,7 @@ public class AddToCartController {
 	
 	@PostMapping("/add")
 	public void addToCart(@RequestBody Cart cart) {
+//		addToCartService.deleteFromCart(cart);
 		addToCartService.addToCart(cart);
 	}
 	

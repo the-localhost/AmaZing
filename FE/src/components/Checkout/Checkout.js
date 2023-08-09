@@ -6,7 +6,7 @@ import { CartContext } from '../CartContext'
 
 function Checkout() {
     let {items, deleteItemFromCart} = useContext(CartContext)
-    let totalCartPrice = items.reduce((total, item) => total + item.price, 0)
+    let totalCartPrice = items.reduce((total, item) => total + (item.productCount*item.product.price), 0)
 
     useEffect(() => {}, [items])
 

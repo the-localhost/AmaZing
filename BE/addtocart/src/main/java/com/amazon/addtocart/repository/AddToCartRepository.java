@@ -11,6 +11,7 @@ import com.amazon.addtocart.entity.Cart;
 @Repository
 public interface AddToCartRepository extends JpaRepository<Cart, Long>{
 	Cart save(Cart cart);
+	Cart findByProductId(UUID productId);
 	void deleteByProductId(UUID productId);
 	ArrayList<Cart> findByUserId(UUID userId);
 }

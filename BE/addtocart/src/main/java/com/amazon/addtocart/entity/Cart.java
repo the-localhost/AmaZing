@@ -14,16 +14,18 @@ public class Cart {
 
 	public UUID productId;
 	public UUID userId;
+	public int productCount;
 
 	public Cart() {
 		super();
 	}
 
-	public Cart(long id, UUID productId, UUID userId) {
+	public Cart(long id, UUID productId, UUID userId, int productCount) {
 		super();
 		this.id = id;
 		this.productId = productId;
 		this.userId = userId;
+		this.productCount = productCount;
 	}
 
 	public long getId() {
@@ -49,4 +51,20 @@ public class Cart {
 	public void setUserId(UUID userId) {
 		this.userId = userId;
 	}
+
+	public int getProductCount() {
+		return productCount;
+	}
+
+	public void setProductCount(int productCount) {
+		this.productCount = productCount;
+	}
+
+	@Override
+	public String toString() {
+		return "Cart [id=" + id + ", productId=" + productId + ", userId=" + userId + ", productCount=" + productCount
+				+ "]";
+	}
+	
+	
 }
