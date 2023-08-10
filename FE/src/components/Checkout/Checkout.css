@@ -1,0 +1,32 @@
+.checkout__main {
+    background-color: #EAEDED;
+    min-height: 85vh;
+    height: 100%;
+}
+
+.checkout__container {
+    background-color: white;
+    margin: 27px 18px;
+    width: 70vw;
+}
+
+.checkout__button {
+    width: 260px !important;
+    height: 40px;
+    border-radius: 10px;
+    margin: 5px;
+    border: 0px;
+    color: black;
+    background-color: #FFD712;
+}
+
+.checkout__cartItems {
+    min-height: 165px;
+}
+
+.emptyCart{
+    font-weight: bold;
+    font-size: 28px;
+    color: #DDDDDD;
+    margin: 100px 0 0 350px;
+}
